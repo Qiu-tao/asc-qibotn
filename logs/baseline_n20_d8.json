@@ -1,0 +1,21 @@
+{
+  "n": 20,
+  "depth": 8,
+  "seed": 42,
+  "backend": "qibotn/quimb",
+  "platform": "qutensornet",
+  "numpy": {
+    "time_s": 8.0797,
+    "norm": 0.9999999999999992
+  },
+  "dense_tn": {
+    "time_s": 11.3142,
+    "norm": 0.9999999999999364
+  },
+  "fidelity": 0.9999999999998719,
+  "mps": {
+    "time_s": 6.0683,
+    "fidelity": 0.9999999999999967
+  },
+  "passed": true
+}

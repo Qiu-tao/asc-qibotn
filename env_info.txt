@@ -1,0 +1,104 @@
+========== 环境信息采集时间: 2026-08-27 08:57:24 CST ==========
+
+==== 系统版本 ====
+Linux autodl-container-09ac499132-b73dd291 5.15.0-94-generic #104-Ubuntu SMP Tue Jan 9 15:25:40 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+
+==== CPU ====
+Architecture:                       x86_64
+CPU op-mode(s):                     32-bit, 64-bit
+Address sizes:                      46 bits physical, 57 bits virtual
+Byte Order:                         Little Endian
+CPU(s):                             128
+On-line CPU(s) list:                0-127
+Vendor ID:                          GenuineIntel
+Model name:                         Intel(R) Xeon(R) Platinum 8352S CPU @ 2.20GHz
+CPU family:                         6
+Model:                              106
+Thread(s) per core:                 2
+Core(s) per socket:                 32
+Socket(s):                          2
+Stepping:                           6
+CPU max MHz:                        3400.0000
+CPU min MHz:                        800.0000
+BogoMIPS:                           4400.00
+Flags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 invpcid_single intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid fsrm md_clear pconfig flush_l1d arch_capabilities
+Virtualization:                     VT-x
+L1d cache:                          3 MiB (64 instances)
+L1i cache:                          2 MiB (64 instances)
+L2 cache:                           80 MiB (64 instances)
+L3 cache:                           96 MiB (2 instances)
+NUMA node(s):                       2
+NUMA node0 CPU(s):                  0-31,64-95
+NUMA node1 CPU(s):                  32-63,96-127
+Vulnerability Gather data sampling: Mitigation; Microcode
+Vulnerability Itlb multihit:        Not affected
+Vulnerability L1tf:                 Not affected
+Vulnerability Mds:                  Not affected
+Vulnerability Meltdown:             Not affected
+Vulnerability Mmio stale data:      Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Retbleed:             Not affected
+Vulnerability Spec rstack overflow: Not affected
+Vulnerability Spec store bypass:    Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:           Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:           Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence
+Vulnerability Srbds:                Not affected
+Vulnerability Tsx async abort:      Not affected
+
+==== 内存 ====
+               total        used        free      shared  buff/cache   available
+Mem:           503Gi        93Gi        71Gi        18Gi       337Gi       386Gi
+Swap:             0B          0B          0B
+
+==== 磁盘(根分区) ====
+overlay          30G  976M   30G   4% /
+
+==== GPU ====
+Thu Aug 27 08:57:24 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4090 D      On  |   00000000:B1:00.0 Off |                  Off |
+| 30%   30C    P8             20W /  425W |       1MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+==== 软件版本 ====
+--- GCC ---
+gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0
+--- GFortran ---
+GNU Fortran (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0
+--- OpenMPI ---
+mpirun (Open MPI) 4.1.2
+--- MPICC ---
+/usr/bin/mpicc
+gcc -I/usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -L/usr/lib/x86_64-linux-gnu/openmpi/lib -lmpi
+--- OpenBLAS ---
+lrwxrwxrwx 1 root root 48 Aug 27 08:32 /usr/lib/x86_64-linux-gnu/libopenblas.a -> /etc/alternatives/libopenblas.a-x86_64-linux-gnu
+lrwxrwxrwx 1 root root 49 Aug 27 08:32 /usr/lib/x86_64-linux-gnu/libopenblas.so -> /etc/alternatives/libopenblas.so-x86_64-linux-gnu
+lrwxrwxrwx 1 root root 51 Aug 27 08:32 /usr/lib/x86_64-linux-gnu/libopenblas.so.0 -> /etc/alternatives/libopenblas.so.0-x86_64-linux-gnu
+--- Python ---
+Python 3.10.12
+
+==== 联网与机器类型 ====
+autodl-container-09ac499132-b73dd291
+root
+租用/云服务商备注: （如有请自行补充，如 AWS/Aliyun/Tencent/Colab 等）
+
+==== 容器实际配额(cgroup 限制, 报告必填) ====
+CPU 配额: 1600000/100000 = 16 核 (cpu.max)
+内存配额: 66571993088 B = 62 GiB (memory.max)
+数据盘: /root/autodl-tmp 50G (可扩容)
+平台: AutoDL (西B区) 容器实例, GPU 按卡分配, 宿主机共 8 卡
