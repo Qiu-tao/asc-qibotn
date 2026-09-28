@@ -1,0 +1,8 @@
+Looking in indexes: http://mirrors.aliyun.com/pypi/simple
+Collecting qibotn==0.0.3
+  Downloading http://mirrors.aliyun.com/pypi/packages/74/d7/b289095819a5ba4072c58adc0fdf129f3fffb77cef4623189c9a8f05c502/qibotn-0.0.3-py3-none-any.whl (25 kB)
+Saved ./vendor/qibotn-0.0.3-py3-none-any.whl
+Successfully downloaded qibotn
+
+[notice] A new release of pip available: 22.2.2 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
