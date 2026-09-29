@@ -1,0 +1,102 @@
+{
+  "rows": [
+    {
+      "workload": "prepared_QFT",
+      "qubits": 6,
+      "seed": 20260928,
+      "gates": 41,
+      "threads": 1,
+      "optimizer": "auto-hq",
+      "qasm_sha256": "a93d52c2620155fc67ac1e203fae52ff9ade5131f8494b0bff3a4c7b353e5c83",
+      "dtype": "complex128",
+      "build_s": 0.0020811371505260468,
+      "execute_s": 0.7127481214702129,
+      "cpu_s": 0.28075512700000016,
+      "state_bytes": 1024,
+      "maxrss_mib": 247.80859375,
+      "validation": {
+        "pass": true,
+        "relative_l2_phase_aligned": 7.005982202271339e-15,
+        "max_abs_error": 1.8695909328161584e-15,
+        "norm": 0.9999999999999927,
+        "fidelity": 1.0000000000000002,
+        "tolerance": 1e-10
+      },
+      "status": "success",
+      "stages": {
+        "qasm_parse_build_s": 0.04364483430981636,
+        "simplify_s": 0.06918033957481384,
+        "contract_including_path_s": 0.5996987782418728
+      }
+    },
+    {
+      "workload": "prepared_QFT",
+      "qubits": 12,
+      "seed": 20260928,
+      "gates": 119,
+      "threads": 1,
+      "optimizer": "auto-hq",
+      "qasm_sha256": "0a3bd443983162240c04f7122efc7360262d12fcd9ce0f3febbb0d9e3463b8a0",
+      "dtype": "complex128",
+      "build_s": 0.00454387441277504,
+      "execute_s": 2.513273663818836,
+      "cpu_s": 0.6043985709999999,
+      "state_bytes": 65536,
+      "maxrss_mib": 250.48046875,
+      "validation": {
+        "pass": true,
+        "relative_l2_phase_aligned": 2.679218301844364e-14,
+        "max_abs_error": 1.613602441763681e-15,
+        "norm": 0.9999999999999722,
+        "fidelity": 0.9999999999999998,
+        "tolerance": 1e-10
+      },
+      "status": "success",
+      "stages": {
+        "qasm_parse_build_s": 0.06867372617125511,
+        "simplify_s": 0.04280334711074829,
+        "contract_including_path_s": 2.400370918214321
+      }
+    }
+  ],
+  "backend_class": "qibotn.backends.quimb.QuimbBackend",
+  "setup_s": 0.5808884277939796,
+  "program_s": 4.64931932836771,
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/root/autodl-tmp/qibotn-study/.venv/lib/python3.10/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+      "version": "0.3.29",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/root/autodl-tmp/qibotn-study/.venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-68440149.so",
+      "version": "0.3.28",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "command": [
+    "benchmark.py",
+    "--mode",
+    "worker",
+    "--qubits",
+    "6",
+    "12",
+    "--threads",
+    "1",
+    "--optimizer",
+    "auto-hq",
+    "--output",
+    "results/kernel_autohq1_n12_r1.json"
+  ],
+  "cuda_visible_devices": ""
+}

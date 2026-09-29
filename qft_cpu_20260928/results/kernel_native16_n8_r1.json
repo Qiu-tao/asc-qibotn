@@ -1,0 +1,92 @@
+{
+  "rows": [
+    {
+      "workload": "prepared_QFT",
+      "qubits": 6,
+      "seed": 20260928,
+      "gates": 41,
+      "threads": 16,
+      "optimizer": "native",
+      "qasm_sha256": "a93d52c2620155fc67ac1e203fae52ff9ade5131f8494b0bff3a4c7b353e5c83",
+      "dtype": "complex128",
+      "build_s": 0.00205104798078537,
+      "execute_s": 0.10995276272296906,
+      "cpu_s": 0.10994200299999957,
+      "state_bytes": 1024,
+      "maxrss_mib": 244.94921875,
+      "validation": {
+        "pass": true,
+        "relative_l2_phase_aligned": 7.052652365488778e-15,
+        "max_abs_error": 1.85635838390438e-15,
+        "norm": 0.9999999999999927,
+        "fidelity": 1.0000000000000002,
+        "tolerance": 1e-10
+      },
+      "status": "success"
+    },
+    {
+      "workload": "prepared_QFT",
+      "qubits": 8,
+      "seed": 20260928,
+      "gates": 63,
+      "threads": 16,
+      "optimizer": "native",
+      "qasm_sha256": "e8ea8cc33753eb0142c32a6112f6251edce78320f3d71013eb2893fcac684d23",
+      "dtype": "complex128",
+      "build_s": 0.0013306736946105957,
+      "execute_s": 0.060576725751161575,
+      "cpu_s": 0.060570689999999594,
+      "state_bytes": 4096,
+      "maxrss_mib": 245.69921875,
+      "validation": {
+        "pass": true,
+        "relative_l2_phase_aligned": 1.2608070094853523e-14,
+        "max_abs_error": 2.291148795838118e-15,
+        "norm": 0.9999999999999869,
+        "fidelity": 1.0000000000000004,
+        "tolerance": 1e-10
+      },
+      "status": "success"
+    }
+  ],
+  "backend_class": "qibotn.backends.quimb.QuimbBackend",
+  "setup_s": 0.617360059171915,
+  "program_s": 1.7744348347187042,
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 16,
+      "prefix": "libscipy_openblas",
+      "filepath": "/root/autodl-tmp/qibotn-study/.venv/lib/python3.10/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+      "version": "0.3.29",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 16,
+      "prefix": "libscipy_openblas",
+      "filepath": "/root/autodl-tmp/qibotn-study/.venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-68440149.so",
+      "version": "0.3.28",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "command": [
+    "benchmark.py",
+    "--mode",
+    "worker",
+    "--qubits",
+    "6",
+    "8",
+    "--threads",
+    "16",
+    "--optimizer",
+    "native",
+    "--output",
+    "results/kernel_native16_n8_r1.json"
+  ],
+  "cuda_visible_devices": ""
+}
